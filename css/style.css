@@ -7,6 +7,10 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+.page {
+  overflow: hidden;
+}
+
 .section.hero {
   position: relative;
 }
@@ -98,9 +102,14 @@ body {
 
 .achievements {
   background-color: #fff;
-  max-width: 960px;
+  min-width: 995px;
   padding: 30px;
-  margin: 0 auto;
+  position: absolute;
+  top: 15px;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 }
 .achievements__item {
   margin-right: 40px;
@@ -140,18 +149,14 @@ body {
   text-transform: uppercase;
 }
 .do-more {
-  margin: 65px 0;
-}
-
-.do-more__item:last-child {
-  padding: 0 0 0 80px;
+  padding: 170px 0 80px 0;
 }
 
 .do-more__title {
   color: #0c2e46;
   font-size: 50px;
   font-weight: 400;
-  margin-right: 40px;
+  line-height: 1;
 }
 
 .do-more__text {
@@ -172,7 +177,7 @@ body {
 }
 
 .donations {
-  padding-bottom: 150px;
+  padding-bottom: 190px;
 }
 .donations__img {
   background-color: #0c2e46;
@@ -200,9 +205,9 @@ body {
 }
 
 .carousel {
-  max-width: 900px;
+  max-width: 780px;
   height: auto;
-  margin: 0 auto 40px auto;
+  margin: -85px auto 40px auto;
 }
 
 .carousel-item {
@@ -334,7 +339,7 @@ body {
 .donate-now {
   padding: 15px 40px;
   background-color: #dce600;
-  max-width: 177px;
+  max-width: 195px;
 }
 
 .read-all a {
