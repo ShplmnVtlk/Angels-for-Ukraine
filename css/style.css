@@ -130,15 +130,15 @@ body {
   margin-bottom: 10px;
 }
 
-.achievements__item-1 .color-text {
+.achievements__item-0 .color-text {
   color: #00b77b;
 }
 
-.achievements__item-2 .color-text {
+.achievements__item-1 .color-text {
   color: #ff2576;
 }
 
-.achievements__item-3 .color-text {
+.achievements__item-2 .color-text {
   color: #5b31b9;
 }
 
@@ -288,15 +288,15 @@ body {
   color: #2d2d2d;
 }
 
-.stories__card-1 {
+.stories__card-0 {
   border-bottom: 5px solid #ff2576;
 }
 
-.stories__card-2 {
+.stories__card-1 {
   border-bottom: 5px solid #5b31b9;
 }
 
-.stories__card-3 {
+.stories__card-2 {
   border-bottom: 5px solid #ff5300;
 }
 
