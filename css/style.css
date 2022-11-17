@@ -66,6 +66,9 @@ body {
 .nav-link:hover {
   color: #dce602;
 }
+.menu-toggler:focus {
+  box-shadow: none;
+}
 .donate-btn {
   display: inline-block;
   background-color: #dce600;
