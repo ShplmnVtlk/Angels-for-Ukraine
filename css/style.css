@@ -512,24 +512,12 @@ body {
 }
 
 @media (max-width: 1399px) {
-  .socials {
-    padding-left: 22px;
-  }
-  .footer__logo {
-    padding-left: 18px;
-  }
   .footer__social-and-logo {
     border-right: 0;
   }
 }
 
 @media (max-width: 1199px) {
-  .socials {
-    padding: 0 10px;
-  }
-  .footer__logo {
-    padding: 0 10px;
-  }
 }
 
 @media (max-width: 991px) {
@@ -789,9 +777,6 @@ body {
     font-size: 36px;
   }
 
-  .socials {
-    padding-left: 30px;
-  }
   .footer__logo {
     padding-left: 30px;
   }
