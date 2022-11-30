@@ -40,16 +40,22 @@ body {
 }
 .header {
   margin-bottom: 100px;
-  z-index: 3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
 }
 
 .logo {
   flex-grow: 1;
 }
 .navbar {
-  padding: 0;
   z-index: 2;
+  padding: 15px 0;
 }
+
 .nav {
   flex-grow: 2;
 }
@@ -87,6 +93,11 @@ body {
   font-size: 16px;
 }
 
+.hero-btn.donate-btn-1 {
+  background-color: #dce600;
+  display: none;
+}
+
 .menu-icon {
   border: none;
   padding: auto;
@@ -98,7 +109,7 @@ body {
   color: #fff;
   text-align: center;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 200px auto 0 auto;
   z-index: 3;
 }
 
@@ -106,7 +117,7 @@ body {
   font-size: 18px;
   color: #fff;
   text-align: center;
-  margin-top: 27px;
+  margin: 27px 0 150px 0;
   z-index: 3;
 }
 
@@ -114,7 +125,7 @@ body {
   display: inline-block;
   background-color: #00a8ff;
   padding: 15px 45px;
-  margin: 35px auto 160px auto;
+  margin: 35px auto 16px auto;
   text-align: center;
   z-index: 3;
   transition: all 0.1s linear;
@@ -195,10 +206,12 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.9;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .do-more__link {
+  display: block;
+  max-width: 300px;
   text-decoration: none;
   color: #0c2e46;
   font-size: 16px;
@@ -371,7 +384,7 @@ body {
 }
 
 .read-all {
-  padding: 15px 40px;
+  padding: 15px 45px;
   background-color: #00a8ff;
   max-width: 177px;
   margin-right: 55px;
@@ -468,31 +481,27 @@ body {
   padding: 100px 0 50px 0;
 }
 
-.footer__list {
-  min-height: 140px;
-  list-style: none;
-  border-left: 1px solid #fff;
+.footer__link a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  transition: all 0.1s linear;
+}
+
+.footer__link a:hover {
+  color: #dce600;
 }
 
 .footer__link {
-  margin-bottom: 7px;
-}
-
-.footer__link a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
+  margin-bottom: 25px;
 }
 
 .footer__social-and-logo {
   min-height: 140px;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
 }
 
 .socials {
-  padding-left: 32px;
   margin-bottom: 50px;
 }
 
@@ -501,23 +510,29 @@ body {
 }
 
 .footer__logo {
-  padding-left: 32px;
 }
 
 .registration {
   font-size: 18px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
-  margin-top: 30px;
+  margin-top: -55px;
 }
 
 @media (max-width: 1399px) {
   .footer__social-and-logo {
-    border-right: 0;
+    margin-top: 20px;
+  }
+  .registration {
+    text-align: right;
+    margin-right: 151px;
   }
 }
 
 @media (max-width: 1199px) {
+  .registration {
+    margin-right: 114px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -584,6 +599,10 @@ body {
   .stories__card:last-child {
     margin-bottom: 0;
   }
+
+  .registration {
+    margin-right: 51px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -620,6 +639,12 @@ body {
   .do-more {
     flex-direction: column;
   }
+  .do-more__text {
+    margin-bottom: 40px;
+  }
+  .do-more__link {
+    margin: 0 auto;
+  }
   .donations__img {
     width: 125px;
     height: 125px;
@@ -647,17 +672,21 @@ body {
   }
   .main-title {
     font-size: 32px;
-    margin-top: 65px;
+    margin-top: 222px;
   }
   .main-subtitle {
     font-size: 15px;
-    margin-top: 12px;
+    margin: 15px 0;
   }
 
   .hero-btn {
-    margin: 12px auto 173px auto;
+    margin: 12px auto;
   }
-  .achievements {
+  .hero-btn.donate-btn-1 {
+    display: block;
+    z-index: 30;
+  }
+  /* .achievements {
     padding: 15px;
     min-width: 430px;
   }
@@ -676,9 +705,49 @@ body {
   .achievements__text .black-text {
     font-size: 7px;
     margin-left: 3px;
+  } */
+  .achievements {
+    flex-direction: column;
+    align-items: center;
+    min-width: 485px;
+    top: 740px;
+  }
+  .achievements__item {
+    margin-right: 0;
+    border-right: 0;
+    border-bottom: 2px solid #0c2e46;
+    padding-right: 0;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+  .achievements__item:first-child {
+    padding-top: 55px;
+  }
+  .achievements__item-0 .achievements__img img {
+    width: 67px;
+    margin-left: 12px;
+  }
+  .achievements__img {
+    margin-right: 0;
+  }
+  .achievements__img img {
+    width: 101px;
+  }
+  .achievements__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 7px;
+  }
+  .achievements__text .color-text {
+    font-size: 38px;
+    text-align: center;
+  }
+  .achievements__text .black-text {
+    font-size: 10px;
   }
   .do-more {
-    padding: 60px 0 80px 0;
+    padding: 480px 0 80px 0;
   }
   .do-more__title {
     font-size: 40px;
@@ -718,16 +787,27 @@ body {
     font-size: 47px;
   }
   .get-in-touch ul li {
-    font-size: 15px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .socials {
+    margin-bottom: 25px;
+  }
+  .registration {
+    text-align: left;
+    margin-top: 25px;
   }
 }
 
 @media (max-width: 415px) {
+  .hero-btn.donate-btn-1 {
+    margin-bottom: 50px;
+  }
   .achievements {
     flex-direction: column;
     align-items: center;
-    min-width: 315px;
-    top: 740px;
+    min-width: 322px;
+    top: 766px;
   }
   .achievements__item {
     margin-right: 0;
@@ -761,7 +841,7 @@ body {
     font-size: 9px;
   }
   .do-more {
-    padding: 325px 0 80px 0;
+    padding: 425px 0 80px 0;
   }
   .story__buttons {
     flex-direction: column;
@@ -775,9 +855,5 @@ body {
 
   .get-in-touch h3 {
     font-size: 36px;
-  }
-
-  .footer__logo {
-    padding-left: 30px;
   }
 }
