@@ -1055,3 +1055,59 @@ body {
 }
 
 /***** about us ******/
+
+/***** moving stories ******/
+
+.subpage__arrows {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+}
+
+.mov-stories h5 {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.about-line__item.mov-stories p {
+  margin-bottom: 10px;
+}
+
+.mov-stories a {
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+  color: #ff2576;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+
+.about-line.mov-stories h3::before {
+  top: 10px;
+  height: 980%;
+}
+
+@media (max-width: 1399px) {
+  .about-line.mov-stories h3::before {
+    height: 1100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-line.mov-stories h3::before {
+    height: 1400%;
+  }
+  .about-line.mov-stories h3::after {
+    top: 3px;
+  }
+  .subpage__arrows {
+    width: 250px;
+  }
+}
+
+/***** moving stories ******/
