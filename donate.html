@@ -1,79 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Angels for Ukraine</title>
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
-    <div class="page">
-      <section
-        class="section hero"
-        style="background-image: url(/img/hero-img.png); height: 140px"
-      >
-        <header class="header">
-          <nav class="navbar navbar-expand-xl">
-            <div class="container">
-              <a class="navbar-brand logo" href="#">
-                <img src="/img/logo.png" alt="logo" />
-              </a>
-              <button
-                class="navbar-toggler menu-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="60"
-                    height="50"
-                    fill="#fff"
-                    class="bi bi-list"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                    />
-                  </svg>
-                </span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >About us</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">How we move people</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link">Stories</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link">Partners</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link">Contact us</a>
-                  </li>
-                </ul>
-                <div class="donate-btn col">
-                  <a href="#">Donate</a>
-                </div>
-              </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style-donate.css" />
+</head>
+<body>
+    <header>
+        <div class="header__poster-donate" style="background-image: url(img/donate--top.jpg);">
+            <div class="right--image">
+                <img src="img/arrows2.png" alt="arrows" class="arrows-2" />
             </div>
-          </nav>
-        </header>
-      </section>
-    </div>
-    <script src="/scripts/bootstrap.bundle.min.js"></script>
-  </body>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container d-flex donate-page-section donate flexWrap">
+            <div class="col col-lg-6 col-md-6 col-12 donate-page__left">
+                <h2>Individual donations</h2>
+                <p>Thank you! Right now you are reaching out to someone to save
+                    them from the horrors of war. With your help, women, children,
+                    the elderly, and the wounded will be transported to safety</p>
+            </div>
+            <div class="col col-lg-6 col-md-6 col-12 donate-page__right">
+                <div class="wrap-form-donate">
+                    <form>
+                        <div class="d-flex ">
+                            <div class="with-2">
+                                <div class="wrap-radio-label">
+                                    <input id='group-1-1' type="radio" name="group1" value="1" checked>
+                                    <label for="group-1-1">MONTHLY</label>
+                                </div>
+                            </div>
+                            <div class="with-2">
+                                <div class="wrap-radio-label">
+                                    <input id='group-1-2' type="radio" name="group1" value="2">
+                                    <label for="group-1-2">SINGLE</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex ">
+                            <div class="with-3">
+                                <div class="wrap-radio-label summDonate">
+                                    <input id='group-2-1' type="radio" name="group2" value="100">
+                                    <label for="group-2-1" data-value="100">100 EUR</label>
+                                </div>
+                            </div>
+                            <div class="with-3">
+                                <div class="wrap-radio-label summDonate">
+                                    <input id='group-2-2' type="radio" name="group2" value="200" checked>
+                                    <label for="group-2-2" data-value="200">200 EUR</label>
+                                </div>
+                            </div>
+                            <div class="with-3">
+                                <div class="wrap-radio-label summDonate">
+                                    <input id='group-2-3' type="radio" name="group2" value="300">
+                                    <label for="group-2-3" data-value="300" >300 EUR</label>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="d-flex ">
+                            <div class="title-input-donate-form">Other amount</div>
+                            <div class="col-4 element-form-bottom">
+                                <div class="wrap-input-label">
+                                    <input type="text" value="">
+                                    <span class="currency">EUR</span>
+                                </div>
+                            </div>
+                            <div class="col-8 element-form-bottom">
+                                <div class="wrap-submit-label">
+                                    <button>
+                                        <img src="img/donate--black.svg" alt="icon">
+                                        <span>DONATE NOW</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>                      
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-flex donate-info-page-section donate flexWrap">
+            <div class="w100flex">
+                <h2>Our Supporter Promise</h2>
+            </div>
+            <div class="col col-lg-6 col-md-6 col-12 donate-page__left">
+                <h3>ABOUT HOW WE USE YOUR DONATIONS</h3>
+                <p>We spend donations only on moving Ukrainian residents to safety:</p>
+                <ul>
+                    <li>from Ukraine to other EU countries,</li>
+                    <li>from war zones to relatively safe regions in Ukraine</li>
+                    <li>wounded in the war from Ukraine to Poland, where they will continue their journey to medical facilities in other countries.</li>
+                </ul>
+            </div>
+            <div class="col col-lg-6 col-md-6 col-12 donate-page__right">
+                <h3>RESPECT FOR YOUR PRIVACY AND YOUR GENEROSITY</h3>
+                <p>We will not make cold telephone calls to the general public</p>
+                <ul>
+                    <li>We’ll never sell your data</li>
+                </ul>
+            </div>
+            <div class="col col-lg-6 col-md-6 col-12 donate-page__left">
+                <h3>A FRIENDLY AND OPEN RESPONSE WHEN YOU GET IN TOUCH</h3>
+                <ul>
+                    <li>To help us operate efficiently, we will answer any questions you may have about your donation.</li>
+                    <li>fIf you wish to direct your donation to a specific cause, we will openly inform you of our possibilities.</li>
+                </ul>
+            </div>
+            <div class="col col-lg-6 col-md-6 col-12 donate-page__right">
+                <h3>REPORTS ON HOW YOUR DONATION IS USED</h3>
+                <ul>
+                    <li>We publish a monthly report where you can read about how we raise money and how we spend it. We also publishing weekly numbers of people transported, so you can follow our progress.</li>
+                </ul>
+            </div>
+            <div class="col col-12 center-button-major">
+                <a href="#q">
+                    <img src="img/donate--black--2.svg" alt="icon">
+                    <span>FOR MAJOR DONORS</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="container d-flex donate-info-page-section donate flexWrap">
+            <div class="col-12">
+                <h2>For major donors</h2>
+                <h3>JOIN US NOW. TOGETHER, ANYTHING IS POSSIBLE.</h3>
+                <p>We invite teams and individuals who want to significantly influence the processes. We have brought thousands of people to safety so far. But this
+                    story is not about just transportation. This is a story of long hours of negotiations, concessions, persuasion, and above all - Trust. Your support can
+                    help a significant number of people get to safety and begin to build their lives in a different, safe world. We invite you to contact us if you want to
+                    know how your donation can provide significant support to our work, or if you want to direct your donation to specific needs. If you would like to
+                    donate via bank transfer, please use the account details below. Your bank will provide you with a receipt as proof of payment:</p>
+            </div>
+        </div>
+
+        <div class="container d-flex donate-contact-form-section donate flexWrap">
+            <div class="col col-lg-6 col-md-6 col-12 donate-page__left">
+                <h2>Charity foundation</h2>
+                <div class="contact-info">
+                    <div>“Angels for Ukraine” (БО БФ АНГЕЛИ ДЛЯ УКРАЇНИ ) Adress: Svobody Square, 5, Kharkiv, Kharkiv Oblast, Ukraina, 61022 Reg nr: 45135124</div>
+                </div>
+                <div class="contact-info">
+                    <div>Bank:</div>
+                    <div>JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE SWIFT:PBANUA2X</div>
+                </div>
+                <div class="contact-info">
+                    <div>GBP:</div>
+                    <div>IBAN: UA253052990000026004031030015</div>
+                    <div>Correspondent bank: J P Morgan Chase Bank, Bournemouth, UK Account in the correspondent bank: 24549501 SORT CODE 609242, SWIFT: CHASGB2L</div>
+                </div>                
+                <div class="contact-info">
+                    <div>EUR:</div>
+                    <div>IBAN: UA743052990000026004021022710</div>
+                    <div>Correspondent bank: Commerzbank AG, Frankfurt am Main, Germany Account in the correspondent bank : 400886700401 SWIFT: COBADEFF</div>
+                    <div>Or </div>
+                    <div>J.P.MORGAN AG, FRANKFURT AM MAIN, GERMANY Account in the correspondent bank: 6231605145 SWIFT: CHASDEFX</div>
+                </div>
+                <div class="contact-info">
+                    <div>UAH:</div>
+                    <div>IBAN: UA033052990000026003021030424</div>
+                </div>
+            </div>
+            <div class="col col-lg-6 col-md-6 col-12 donate-page__right">
+                <div class="donate-form-contact">
+                    <form>
+                        <div class="wrap-input-contact">
+                            <input type="text" placeholder="First name">
+                        </div>
+                        <div class="wrap-input-contact">
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="wrap-input-contact">
+                            <textarea placeholder="Type your message here"></textarea>
+                        </div>
+                        <div class="wrap-input-button">
+                            <input type="submit" value="SUBMIT">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts/script.js"></script>
+</body>
 </html>
