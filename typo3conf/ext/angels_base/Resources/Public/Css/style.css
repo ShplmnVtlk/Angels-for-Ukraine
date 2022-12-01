@@ -297,12 +297,17 @@ body {
 
 .carousel {
   max-width: 780px;
-  height: auto;
   margin: -85px auto 40px auto;
 }
 
 .carousel-item {
   position: relative;
+}
+
+.carousel-item img {
+  width: auto;
+  height: 500px;
+  max-height: 500px;
 }
 
 .carousel-link {
@@ -812,6 +817,11 @@ body {
   .donations__link a {
     font-size: 20px;
   }
+  .carousel-item img {
+    width: auto;
+    height: 400px;
+    max-height: 400px;
+  }
   .carousel-control-next {
     right: -8px;
   }
@@ -886,6 +896,11 @@ body {
   }
   .do-more {
     padding: 425px 0 80px 0;
+  }
+  .carousel-item img {
+    width: auto;
+    height: 300px;
+    max-height: 300px;
   }
   .story__buttons {
     flex-direction: column;
