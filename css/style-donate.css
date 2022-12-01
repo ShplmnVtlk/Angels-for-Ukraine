@@ -101,7 +101,7 @@ header .right--image{
     font-weight: 400;
     line-height: 1.9;
     padding-bottom: 15px;
-    list-style: inside;  
+    list-style: inside;
 }
 
 @media (max-width: 1199px) {
@@ -149,7 +149,7 @@ header .right--image{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    cursor: pointer; 
+    cursor: pointer;
 }
 .wrap-form-donate .wrap-radio-label input:checked + label{
     color: #fff;
@@ -161,7 +161,7 @@ header .right--image{
 .wrap-form-donate .wrap-input-label input{
     border: 1px solid #0c2e46;
     color: #0c2e46;
-    height: 80px;  
+    height: 80px;
     outline: none !important;
     padding-left: 20px;
     padding-right: 90px;
@@ -301,7 +301,7 @@ header .right--image{
 .donate-contact-form-section .donate-form-contact .wrap-input-contact input{
     border: 1px solid #0c2e46;
     color: #0c2e46;
-    height: 70px;  
+    height: 70px;
     outline: none !important;
     padding-left: 20px;
     padding-right: 20px;
@@ -313,7 +313,7 @@ header .right--image{
 .donate-contact-form-section .donate-form-contact .wrap-input-contact textarea{
     border: 1px solid #0c2e46;
     color: #0c2e46;
-    height: 130px;  
+    height: 130px;
     outline: none !important;
     padding-left: 20px;
     padding-right: 20px;
